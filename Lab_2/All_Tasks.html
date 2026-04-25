@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Website - Lab Tasks</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      header img {
+        width: 80px;
+        display: block;
+        margin: auto;
+      }
+
+      nav {
+        background: #555;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: white;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        background: orange;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      section {
+        padding: 20px;
+        background: white;
+        margin: 10px;
+        border-radius: 8px;
+      }
+
+      article {
+        background: #e8f0fe;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 10px;
+      }
+
+      aside {
+        background: #fff3cd;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 8px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+      }
+
+      .gallery img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <img src="https://via.placeholder.com/80" alt="Logo" />
+      <h1>My Mini Website</h1>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- SECTION 1 -->
+    <section id="home">
+      <h2>Introduction</h2>
+      <p>
+        Welcome to our website. This page demonstrates all HTML concepts in one
+        place.
+      </p>
+
+      <!-- ARTICLE -->
+      <article>
+        <h3>About Our Company</h3>
+        <p><strong>Author:</strong> Sami Ullah</p>
+        <p>
+          We provide high quality web development services using modern
+          technologies.
+        </p>
+      </article>
+
+      <!-- ASIDE -->
+      <aside>
+        <h4>Related Links</h4>
+        <ul>
+          <li><a href="https://www.google.com" target="_blank">Google</a></li>
+          <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>Mobile App Development</li>
+        <li>SEO Optimization</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="portfolio">
+      <h2>Portfolio (Clickable Images)</h2>
+
+      <a href="https://www.google.com" target="_blank">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="Project 1"
+          width="200"
+        />
+      </a>
+
+      <a href="https://www.youtube.com" target="_blank">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="Project 2"
+          width="200"
+        />
+      </a>
+
+      <a href="https://www.github.com" target="_blank">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="Project 3"
+          width="200"
+        />
+      </a>
+
+      <!-- IMAGE GALLERY -->
+      <h3>Image Gallery</h3>
+      <div class="gallery">
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Gallery 1" />
+          <p>Image 1</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Gallery 2" />
+          <p>Image 2</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Gallery 3" />
+          <p>Image 3</p>
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Gallery 4" />
+          <p>Image 4</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section>
+      <h2>Student Data</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Course</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Ali</td>
+            <td>101</td>
+            <td>HTML</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>Ahmed</td>
+            <td>102</td>
+            <td>CSS</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Sara</td>
+            <td>103</td>
+            <td>JS</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>Zara</td>
+            <td>104</td>
+            <td>Java</td>
+            <td>92</td>
+          </tr>
+          <tr>
+            <td>Usman</td>
+            <td>105</td>
+            <td>SQL</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <h2>Contact Information</h2>
+
+      <p>Email: <a href="mailto:example@email.com">Send Email</a></p>
+      <p>Phone: <a href="tel:+923001234567">Call Us</a></p>
+
+      <p>
+        Visit:
+        <a href="https://www.google.com" target="_blank">External Link</a>
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 My Website | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
